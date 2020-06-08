@@ -12,10 +12,10 @@ To build and run the microservices, following must be installed on your computer
  - Local installation of RabbitMQ .
  Post installation, if the username, password or the host are other than the defaults, then please set the environment variables `RABBIT_MQ_HOST`, `RABBIT_MQ_USERNAME` and `RABBIT_MQ_PASSWORD` accordingly.
  
- ##Build
+ ## Build
  Please use the `mvn clean install` command to build the microservices.
  
- ##Run
+ ## Run
  Use the `java -jar` command from the target folder to start the microservices.
  
  Example:
@@ -27,11 +27,11 @@ java jar ./target/car-ratings-service-1.0.0.jar
 Please not that the car-info-service will start on the port `8081`
 and the car-ratings-service will start on the port `8082`
 
-##Endpoints
-###car-info-service endpoints
+## Endpoints
+### car-info-service endpoints
 The car-info-service exposes REST CRUD endpoints to store or manipulate the car information.
 
-####POST endpoint
+#### POST endpoint
 We can post a new car information object as demonstrated in the following example 
 
 ```
@@ -63,7 +63,7 @@ Response:
 
 ```
 
-####GET endpoints
+#### GET endpoints
 We can get a specific car information object as demonstrated in the following example 
 
 ````
@@ -87,7 +87,6 @@ Response:
     "version": 0
 }
 ````
-
 Also we can get all the car information as demonstrated in the example below,
 
 ````
@@ -121,7 +120,7 @@ Response:
 ]
 ````
 
-####PUT endpoint
+#### PUT endpoint
 We can update a specific car information as demonstrated in the following example 
 
 ````
@@ -153,7 +152,7 @@ The GET will display updated result as follows
 }
 ````
 
-####DELETE endpoint
+#### DELETE endpoint
 We can delete a specific car information as demonstrated in the following example 
 
 ````
@@ -167,10 +166,10 @@ Response:
 
 ````
 
-###car-ratings-service endpoints
+### car-ratings-service endpoints
 The car-ratings-service exposes REST CRUD endpoints to store or manipulate the car ratings.
 
-####POST endpoint
+#### POST endpoint
 We can post a new rating for a car as demonstrated in the following example 
 
 ```
@@ -195,7 +194,7 @@ Response:
 }
 ```
 
-####GET endpoints
+#### GET endpoints
 We can get a specific car rating as demonstrated in the following example 
 
 ````
@@ -240,7 +239,7 @@ Response:
 ]
 ````
 
-####PUT endpoint
+#### PUT endpoint
 We can update a specific car rating as demonstrated in the following example 
 
 ````
@@ -267,7 +266,7 @@ The GET for the rating with ID will display updated result as follows
 }
 ````
 
-####DELETE endpoint
+#### DELETE endpoint
 We can delete a specific car rating as demonstrated in the following example 
 
 ````
@@ -280,7 +279,7 @@ Response:
 202 Accepted
 ````
 
-##Service to service communication
+## Service to service communication
 The two services communicate with each other using messaging queues of RabbitMQ. 
 
 The objective of `car-rating-service` and `car-info-service` to communicate with each other is that, 
