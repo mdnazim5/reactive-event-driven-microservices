@@ -1,6 +1,6 @@
 # Introduction
 This repository comprises of two simple microservices named 
-`car-info-service` and `car-ratings service` which are developed in spring boot.
+`car-info-service` and `car-ratings-service` which are developed in spring boot.
 The services uses MongoDB for data persistance and RabbitMQ for communication.
 
 ## Prerequisite installations
